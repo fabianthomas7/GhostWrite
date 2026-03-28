@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: uname
       run: echo "hello from $(uname -m)"
+    - name: lscpu
+      run: lscpu
     - uses: actions/checkout@v4
     - name: build
       run: gcc -march="rv64gvzve64x" ghostwrite.c -o ghostwrite
