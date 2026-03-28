@@ -18,4 +18,4 @@ jobs:
     - name: cat-cpu
       run: head -n 9 /proc/cpuinfo
     - name: run-test
-      run: ./ghostwrite || true
+      run: sudo ./ghostwrite
