@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-24.04-riscv
     steps:
     - name: uname
-      run: echo "hello from $(uname -m)"
+      run: uname -a
     - name: lscpu
       run: lscpu
     - uses: actions/checkout@v4
